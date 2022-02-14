@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Practice TestSuite]">
+  <listeners>
+    <listener class-name="com.qyrus.practice.qa.extentreports.ExtentReportListener"/>
+  </listeners>
+  <test name="Practice Test(failed)">
+    <classes>
+      <class name="com.qyrus.practice.qa.pages.testcases.HomePageTestCase">
+        <methods>
+          <include name="setUp"/>
+          <include name="terminate"/>
+        </methods>
+      </class> <!-- com.qyrus.practice.qa.pages.testcases.HomePageTestCase -->
+      <class name="com.qyrus.practice.qa.pages.testcases.LoginPageTestCase">
+        <methods>
+          <include name="terminate"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qyrus.practice.qa.pages.testcases.LoginPageTestCase -->
+      <class name="com.qyrus.practice.qa.pages.testcases.ContactsPageTestCase">
+        <methods>
+          <include name="setUp"/>
+          <include name="terminate"/>
+          <include name="createNewContact"/>
+        </methods>
+      </class> <!-- com.qyrus.practice.qa.pages.testcases.ContactsPageTestCase -->
+    </classes>
+  </test> <!-- Practice Test(failed) -->
+</suite> <!-- Failed suite [Practice TestSuite] -->

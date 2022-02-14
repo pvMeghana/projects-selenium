@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Practice TestSuite">
+
+	<listeners>
+		<listener
+			class-name="com.qyrus.practice.qa.extentreports.ExtentReportListener" />
+	</listeners>
+	
+	<test name="Practice Test">
+		<classes>
+			<class
+				name="com.qyrus.practice.qa.pages.testcases.LoginPageTestCase" />
+			<class
+				name="com.qyrus.practice.qa.pages.testcases.HomePageTestCase" />
+			<class
+				name="com.qyrus.practice.qa.pages.testcases.ContactsPageTestCase" />
+		</classes>
+	</test>
+</suite>
